@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f4f8;
+}
+
+.app {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.guess-form {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.guess-form input {
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* Message colors by type */
+.message {
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.message.error {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.message.hint {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.message.success {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.attempts {
+  margin-top: 16px;
+}
+
+.restart {
+  color: #666;
+}
